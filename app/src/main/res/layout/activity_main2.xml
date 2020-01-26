@@ -1,0 +1,22 @@
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayoutRL"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/headingTextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="\nLIST OF STUDENTS : \n\n"
+        android:textAlignment="center"
+        android:textSize="25sp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headingTextView"
+        android:id="@+id/listView"/>
+
+
+</RelativeLayout>

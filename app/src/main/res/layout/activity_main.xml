@@ -1,0 +1,67 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayout"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textViewMainHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Enter Your Details Below\n"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewSubHeading"
+        android:text="\nThe data will be stored online on firebase and will be retrieved from the same\n\n"
+        android:layout_below="@+id/textViewMainHeading"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:layout_below="@+id/textViewSubHeading"
+        android:id="@+id/editTextName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Age"
+        android:id="@+id/editTextAge"
+        android:layout_below="@+id/editTextName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter University Name"
+        android:id="@+id/editTextUniversityName"
+        android:layout_below="@+id/editTextAge"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSave"
+        android:text="Save Data"
+        android:layout_below="@+id/editTextUniversityName"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonShow"
+        android:text="Show Data"
+        android:layout_below="@+id/buttonSave"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonShow"
+        android:text="\n\nmade by - Vivek Patidar\n\n"
+        android:textAlignment="textEnd"/>
+
+</RelativeLayout>
